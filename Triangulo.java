@@ -1,13 +1,12 @@
 package datos;
-
 public class Triangulo {
-	public double base;
-	public double altura;
-	
-	public double calcular_area() {
-		double area;
-		area = (base * altura) / 2;
-		return area;
-	}
-
+    public double catetoA;
+    public double catetoB;
+    public Triangulo(double a,double b) {
+        catetoA = a;
+        catetoB = b;
+    }
+    public double calcularHipotenusa() {
+        return Math.sqrt(catetoA*catetoA+catetoB*catetoB);
+    }
 }
